@@ -92,7 +92,7 @@ function App() {
 
             <Box sx={{ mt: 4, display:'flex', flexDirection:'column',alignItems:'center',justifyItems:'center' }}>
               <Typography variant="h5" fontWeight="bold" gutterBottom>Contact Me</Typography>
-              <Typography variant="body2" gutterBottom>Let's connect and discuss architecture!</Typography>
+              <Typography variant="body2" gutterBottom>Let's connect !</Typography>
               <Link href={`mailto:cathyle211@gmail.com`} underline="hover" sx={{display:'flex', alignItems:'center',justifyItems:'center' ,gap:1} }>  
               <FontAwesomeIcon icon={faEnvelope } size="2x"/>
               Get in Touch
