@@ -31,7 +31,7 @@ function App() {
           <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: isMobile ? '100%' : '1/3', py: isMobile ? 2 : 0 }}>
             <CardMedia
               component="img"
-              image="src/assets/img/profile.png" 
+              src="src/assets/img/profile.png" 
               alt="profile-picture"
               sx={{
                 width: 160,
