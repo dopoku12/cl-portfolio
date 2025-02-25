@@ -48,11 +48,9 @@ function App() {
           <CardContent sx={{ flexGrow: 1, p: isMobile ? 2 : 4, textAlign: isMobile ? 'center' : 'left' }}>
             <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: isMobile ? 'center' : 'flex-start', gap: 1, mb: 1 }}>
               <Typography variant="h4" fontWeight="bold">
-                CATHY
+                CATHY LE
               </Typography>
-              <Typography variant="h4" fontWeight="semibold">
-                LE
-              </Typography>
+              
             </Box>
             <Typography variant="h6" fontWeight="semibold" gutterBottom>
             Architecture Student @University of Maryland
@@ -78,24 +76,30 @@ function App() {
             </Box>
 
             {/* Projects and Contact Sections */}
-            <Box sx={{ mt: 4 }}>
+            <Box sx={{ display: 'flex', 
+              flexDirection: isMobile ? 'column' : 'row',
+              justifyContent:'center',
+              alignItems:'center',gap:4}}>
+
+            <Box sx={{ mt: 4,display:'flex', flexDirection:'column', alignItems:'center',justifyItems:'center' }}>
               <Typography variant="h5"  fontWeight="bold" gutterBottom>Projects</Typography>
               <Typography variant="body2" gutterBottom>Check out my student projects.</Typography>
-              <Link href="#" download="" sx={{display:'flex', alignItems:'center', gap:1} } underline="hover">
+              <Link href="#" download="" sx={{display:'flex', alignItems:'center',justifyItems:'center' ,gap:1} } underline="hover">
               <FontAwesomeIcon icon={faDownload} size='2x' />
               View Portfolio
               </Link>
             </Box>
 
-            <Box sx={{ mt: 4 }}>
+            <Box sx={{ mt: 4, display:'flex', flexDirection:'column',alignItems:'center',justifyItems:'center' }}>
               <Typography variant="h5" fontWeight="bold" gutterBottom>Contact Me</Typography>
               <Typography variant="body2" gutterBottom>Let's connect and discuss architecture!</Typography>
-              <Link href={`mailto:username@email.com`} underline="hover" sx={{display:'flex', alignItems:'center', gap:1} }>  
+              <Link href={`mailto:cathyle211@gmail.com`} underline="hover" sx={{display:'flex', alignItems:'center',justifyItems:'center' ,gap:1} }>  
               <FontAwesomeIcon icon={faEnvelope } size="2x"/>
               Get in Touch
               </Link>
             </Box>
 
+            </Box>
           </CardContent>
         </Box>
       </Card>
