@@ -31,7 +31,7 @@ function App() {
           <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: isMobile ? '100%' : '1/3', py: isMobile ? 2 : 0 }}>
             <CardMedia
               component="img"
-              image="/assets/img/profile.png" 
+              image="src/assets/img/profile.png" 
               alt="profile-picture"
               sx={{
                 width: 160,
@@ -44,7 +44,6 @@ function App() {
               }}
             />
           </Box>
-
 
           <CardContent sx={{ flexGrow: 1, p: isMobile ? 2 : 4, textAlign: isMobile ? 'center' : 'left' }}>
             <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: isMobile ? 'center' : 'flex-start', gap: 1, mb: 1 }}>
