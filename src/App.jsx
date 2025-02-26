@@ -84,7 +84,7 @@ function App() {
             <Box sx={{ mt: 4,display:'flex', flexDirection:'column', alignItems:'center',justifyItems:'center' }}>
               <Typography variant="h5"  fontWeight="bold" gutterBottom>Projects</Typography>
               <Typography variant="body2" gutterBottom>Check out my student projects.</Typography>
-              <Link href="#" download="" sx={{display:'flex', alignItems:'center',justifyItems:'center' ,gap:1} } underline="hover">
+              <Link href="/assets/pdf/portfolio.pdf" download="" sx={{display:'flex', alignItems:'center',justifyItems:'center' ,gap:1} } underline="hover">
               <FontAwesomeIcon icon={faDownload} size='2x' />
               View Portfolio
               </Link>
