@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, } from '@fortawesome/free-brands-svg-icons';
 import { Box, Card, CardMedia, CardContent, Typography, Link, useMediaQuery, useTheme } from '@mui/material';
-import { faEnvelope,faDownload} from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope,faDownload,faFileArrowDown} from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   const theme = useTheme();
@@ -20,7 +20,7 @@ function App() {
     >
       <Card
         sx={{
-          width: isMobile ? '95%' : 'min(600px, 90%)',
+          width: isMobile ? '95%' : 'min(600px, 95%)',
           boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)',
           borderRadius: 'lg',
           overflow: 'hidden',
@@ -79,7 +79,7 @@ function App() {
             <Box sx={{ display: 'flex', 
               flexDirection: isMobile ? 'column' : 'row',
               justifyContent:'center',
-              alignItems:'center',gap:4}}>
+              alignItems:'center',gap:5}}>
 
             <Box sx={{ mt: 4,display:'flex', flexDirection:'column', alignItems:'center',justifyItems:'center' }}>
               <Typography variant="h5"  fontWeight="bold" gutterBottom>Projects</Typography>
@@ -89,6 +89,16 @@ function App() {
               View Portfolio
               </Link>
             </Box>
+
+            <Box sx={{ mt: 4,display:'flex', flexDirection:'column', alignItems:'center',justifyItems:'center' }}>
+              <Typography variant="h5"  fontWeight="bold" gutterBottom>Resume</Typography>
+              <Typography variant="body2" gutterBottom>Check out my Resume</Typography>
+              <Link href="/assets/pdf/Cathy-Le-Resume.pdf" download="" sx={{display:'flex', alignItems:'center',justifyItems:'center' ,gap:1} } underline="hover">
+              <FontAwesomeIcon icon={faFileArrowDown} size='2x'/>
+              View Resume
+              </Link>
+            </Box>
+
 
             <Box sx={{ mt: 4, display:'flex', flexDirection:'column',alignItems:'center',justifyItems:'center' }}>
               <Typography variant="h5" fontWeight="bold" gutterBottom>Contact Me</Typography>
